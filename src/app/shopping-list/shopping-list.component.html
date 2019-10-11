@@ -3,13 +3,12 @@
     <app-shopping-list-edit></app-shopping-list-edit>
     <hr>
     <div class="list-group">
-      <button type="button" class="list-group-item list-group-item-action active">
-        Cras justo odio
+      <button
+        *ngFor="let ingredient of ingredients"
+        class="list-group-item list-group-item-action"
+        type="button"
+      >{{ ingredient.name }} ({{ ingredient.amount }})
       </button>
-      <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-      <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-      <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-      <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
     </div>
   </div>
 </div>
