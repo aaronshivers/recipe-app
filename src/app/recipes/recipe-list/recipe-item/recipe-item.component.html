@@ -1,1 +1,11 @@
-<p>recipe-item works!</p>
+<div class="d-flex justify-content-between">
+  <div>
+    <h5>{{ recipeElement.name }}</h5>
+    <p class="mb-0">{{ recipeElement.description }}</p>
+  </div>
+  <img
+    alt="{{ recipeElement.description }}"
+    src="{{ recipeElement.imageUrl }}"
+    style="max-height: 50px;"
+  >
+</div>
