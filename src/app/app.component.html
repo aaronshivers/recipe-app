@@ -1,5 +1,5 @@
 <app-header (currentFeature)="onNavigate($event)"></app-header>
-<div class="container">
+<div class="container mt-3 mb-3">
   <div *ngIf="loadedFeature === 'recipe'; then thenBlock else elseBlock"></div>
   <ng-template #thenBlock><app-recipes class="row"></app-recipes></ng-template>
   <ng-template #elseBlock><app-shopping-list class="row"></app-shopping-list></ng-template>
