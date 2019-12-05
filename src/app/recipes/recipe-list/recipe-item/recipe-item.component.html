@@ -1,4 +1,4 @@
-<div (click)="onSelectRecipe()" class="d-flex justify-content-between">
+<div *ngIf="recipe" class="d-flex justify-content-between">
   <div>
     <h5>{{ recipe.name }}</h5>
     <p class="mb-0">{{ recipe.description }}</p>
