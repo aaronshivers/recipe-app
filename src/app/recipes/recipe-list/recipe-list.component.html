@@ -1,7 +1,7 @@
 <button class="btn btn-success mb-3">New Recipe</button>
 
-<div class="list-group">
-  <a *ngFor="let recipe of recipes" class="list-group-item" href="#">
+<ul class="list-group">
+  <li *ngFor="let recipe of recipes" class="list-group-item list-group-item-action" style="cursor: pointer;">
     <app-recipe-item [recipe]="recipe"></app-recipe-item>
-  </a>
-</div>
+  </li>
+</ul>
