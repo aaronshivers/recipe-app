@@ -1,5 +1,5 @@
 <div class="col-md-5">
-  <app-recipes-list (currentRecipe)="selectedRecipe = $event"></app-recipes-list>
+  <app-recipes-list></app-recipes-list>
 </div>
 <div class="col-md-7">
   <app-recipes-detail *ngIf="selectedRecipe; else elseBlock" [currentRecipe]="selectedRecipe"></app-recipes-detail>
