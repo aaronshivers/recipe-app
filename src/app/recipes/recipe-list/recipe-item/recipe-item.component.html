@@ -1,11 +1,13 @@
-<div class="d-flex justify-content-between" [routerLink]="[recipe.id]">
-  <div>
-    <h5>{{ recipe.name }}</h5>
-    <p class="mb-0">{{ recipe.description }}</p>
+<li class="list-group-item list-group-item-action" routerLinkActive="active" style="cursor: pointer;">
+  <div class="d-flex justify-content-between" [routerLink]="[recipe.id]">
+    <div>
+      <h5>{{ recipe.name }}</h5>
+      <p class="mb-0">{{ recipe.description }}</p>
+    </div>
+    <img
+      alt="{{ recipe.name }}"
+      [src]="recipe.imageUrl"
+      style="max-height: 50px;"
+    >
   </div>
-  <img
-    alt="{{ recipe.name }}"
-    [src]="recipe.imageUrl"
-    style="max-height: 50px;"
-  >
-</div>
+</li>
